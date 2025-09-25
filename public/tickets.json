@@ -41,7 +41,7 @@
     "description": "Customer forgot their password and cannot reset it using the standard password recovery flow. They have not received the reset email even after multiple attempts and need assistance urgently to regain access.",
     "customer": "Ella White",
     "priority": "High",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2025-09-21T10:50:00Z"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Customer cancelled their order but has not received a refund. They have checked their bank account and transaction history but found no refund. They request a status update and immediate processing of the refund.",
     "customer": "Jack Robinson",
     "priority": "High",
-    "status": "Resolved",
+    "status": "In Progress",
     "createdAt": "2025-09-23T07:25:00Z"
   },
   {
@@ -113,7 +113,7 @@
     "description": "Customer tried applying a promotional coupon during checkout, but the system shows an error and does not apply the discount. They verified the code is valid and request assistance to apply the discount correctly.",
     "customer": "Mia Walker",
     "priority": "Low",
-    "status": "Resolved",
+    "status": "In Progress",
     "createdAt": "2025-09-24T06:10:00Z"
   },
   {
