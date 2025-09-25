@@ -2,79 +2,39 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    // <div className='bg-black h-[462px]'>
-    //   <footer className='container mx-auto'>
-    //       <div className='flex flex-col md:flex-row justify-between pt-20'>
-    //         <div>
-    //           <h2 className='text-white text-2xl font-bold'>CS — Ticket System</h2>
-    //           <p className='text-[#A1A1AA] mt-4'>A ticket system is a tool used <br /> to manage customer requests,<br /> issues, or tasks. It organizes <br />queries into trackable tickets,<br /> ensuring efficient communication,<br /> faster resolutions, and better service <br /> management across teams, making <br /> workflow and support easier to handle.</p>
-    //         </div>
-    //         <div>
-    //           <h2 className='text-white text-2xl font-bold'>Company</h2>
-    //           <p className='text-[#A1A1AA] mt-4'>About Us</p>
-    //           <p className='text-[#A1A1AA] mt-4'>Our Mission</p>
-    //           <p className='text-[#A1A1AA] mt-4'>Contact Saled</p>
-    //         </div>
-    //         <div>
-    //           <h2 className='text-white text-2xl font-bold'>Services</h2>
-    //           <p className='text-[#A1A1AA] mt-4'>Products & Services</p>
-    //           <p className='text-[#A1A1AA] mt-4'>Customer Stories</p>
-    //           <p className='text-[#A1A1AA] mt-4'>Download Appss</p>
-    //         </div>
-    //         <div>
-    //           <h2 className='text-white text-2xl font-bold'>Information</h2>
-    //           <p className='text-[#A1A1AA] mt-4'>Privacy Policy</p>
-    //           <p className='text-[#A1A1AA] mt-4'>Terms & Conditions</p>
-    //           <p className='text-[#A1A1AA] mt-4'>Join Us</p>
-    //         </div>
-    //         <div>
-    //           <h2 className='text-white text-2xl font-bold'>Social Links</h2>
-    //           <p className='text-[#A1A1AA] mt-4'>@CS — Ticket System</p>
-    //           <p className='text-[#A1A1AA] mt-4'>@CS — Ticket System</p>
-    //           <p className='text-[#A1A1AA] mt-4'>@CS — Ticket System</p>
-    //           <p className='text-[#A1A1AA] mt-4'>support@cst.com</p>
-    //         </div>
-
-    //       </div>
-    //       <div className='pt-15'>
-    //         <hr />
-    //         <p className='text-white text-center mt-7'>© 2025 CS — Ticket System. All rights reserved.</p>
-    //       </div>
-    //   </footer>
-    // </div>
+   
     <div className='bg-neutral'>
       <footer class="footer sm:footer-horizontal  text-neutral-content p-10 container mx-auto">
         <nav>
-          <h6 class="footer-title">Services</h6>
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+          <h6 class="footer-title">CS — Ticket System</h6>
+          <a class="link link-hover">A ticket system is a tool used to <br /> manage customer requests, issues,<br /> or tasks. It organizes queries into <br /> trackable tickets, ensuring efficient <br /> communication, faster resolutions, <br /> and better service management across <br /> teams, making workflow and support <br /> easier to handle.</a>
+         
         </nav>
         <nav>
           <h6 class="footer-title">Company</h6>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
+          <a class="link link-hover mt-4">About us</a>
+          <a class="link link-hover mt-4">Our Mission</a>
+          <a class="link link-hover mt-4">Contact Saled</a>
+          
         </nav>
         <nav>
-          <h6 class="footer-title">Legal</h6>
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover mt-4">Products & Services</a>
+          <a class="link link-hover mt-4">Customer Stories</a>
+          <a class="link link-hover mt-4">Download Apps</a>
         </nav>
         <nav>
-          <h6 class="footer-title">Legal</h6>
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+          <h6 class="footer-title">Information</h6>
+          <a class="link link-hover mt-4">Privacy Policy</a>
+          <a class="link link-hover mt-4">Terms & Conditions</a>
+          <a class="link link-hover mt-4">Join Us</a>
         </nav>
         <nav>
-          <h6 class="footer-title">Legal</h6>
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+          <h6 class="footer-title">Social Links</h6>
+           <a class="link link-hover mt-4"><i class="fa-brands fa-x-twitter"></i> @CS — Ticket System</a>
+          <a class="link link-hover mt-4"><i class="fa-brands fa-linkedin-in"></i> @CS — Ticket System</a>
+          <a class="link link-hover mt-4"><i class="fa-brands fa-facebook"></i> @CS — Ticket System</a>
+          <a class="link link-hover mt-4"><i class="fa-solid fa-envelope"></i> support@cst.com</a>
         </nav>
       </footer>
       <div className='md:pt-15 pb-5'>
