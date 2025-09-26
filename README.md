@@ -1,16 +1,36 @@
-# React + Vite
+# React Concepts – Q&A
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This README provides explanations of some fundamental React concepts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 1. What is JSX, and why is it used?
 
-## React Compiler
+**JSX (JavaScript XML)** is a syntax extension for JavaScript that allows us to write HTML-like code inside JavaScript.  
+It makes the code easier to read and write, and React can efficiently convert JSX into actual JavaScript using `React.createElement()`.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Why it’s used:**
+- Improves readability by combining UI and logic.
+- Makes it easier to visualize the component structure.
+- Helps catch errors during compilation.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 2. What is the difference between State and Props?
+
+| Feature   | State | Props |
+|-----------|-------|-------|
+| Definition | An object that holds data managed within the component. | Short for "properties", used to pass data from parent to child. |
+| Mutability | Mutable (can be updated using `setState` or hooks like `useState`). | Immutable (read-only inside the child). |
+| Ownership | Managed within the component itself. | Passed down from parent components. |
+| Usage | Used for dynamic, interactive data. | Used for static or input data. |
+
+---
+
+## 3. What is the useState hook, and how does it work?
+
+`useState` is a React hook that allows you to add state to functional components.
+
+**Syntax:**
+```js
+const [value, setValue] = useState(initialValue);
