@@ -13,7 +13,7 @@ const Ticket = ({initialData}) => {
           
   
 
-    <div className="grid col-span-3 md:grid-cols-2 grid-cols-1 gap-4 ">
+    <div className="grid md:col-span-3 md:grid-cols-2 grid-cols-1 gap-4 ">
 
           {
             count.map(data => {

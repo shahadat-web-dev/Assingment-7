@@ -11,19 +11,21 @@ const Customer_ticket = ({ fetchPromise }) => {
 
   return (
     <div className=" bg-[#F5F5F5] pb-20">
-      <h1 className="container mx-auto pb-4 text-2xl font-semibold text-[#34485A]">Customer Tickets</h1>
-      <div className="container mx-auto grid grid-cols-4 gap-8">
+      <h1 className="container mx-auto pb-4 text-2xl font-semibold text-[#34485A] p-3">Customer Tickets</h1>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 p-3">
 
         {/* Ticket */}
 
         <Ticket initialData={initialData}></Ticket>
 
         {/* status */}
-        <div>
-         <Task_status/>
+        <div className="grid col-span-1">
+          <div>
+            <Task_status />
 
-          <Resolved_task/>
-          
+            <Resolved_task />
+
+          </div>
         </div>
 
       </div>

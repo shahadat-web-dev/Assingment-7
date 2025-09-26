@@ -2,7 +2,7 @@
 
 const Navber = () => {
   return (
-    <div className="bg-white shadow-sm ">
+    <div className="bg-white shadow-sm md:p-0 p-3">
       <div className=" bg-base-100 shadow-sm flex items-center container mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
