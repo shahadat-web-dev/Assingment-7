@@ -1,7 +1,7 @@
 
 import bgleft from '../assets/bgleft.png'
 import bgright from '../assets/bgright.png'
-const Counter_Box = () => {
+const Counter_Box = ({ticketSelect}) => {
 
   return (
 
@@ -15,7 +15,7 @@ const Counter_Box = () => {
             <div className='  flex items-center justify-center flex-col'>
 
               <h1 className='text-[24px]'>In-Progress</h1>
-              <p className='text-[60px] font-bold'>0</p>
+              <p className='text-[60px] font-bold'>{ticketSelect.length}</p>
             </div>
 
 
