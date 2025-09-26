@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, } from 'react'
 import './App.css'
 import Counter_Box from './components/Counter_Box'
 import Customer_ticket from './components/Customer_ticket'
@@ -13,6 +13,8 @@ const fetchLoad = async () => {
 
 function App() {
   const fetchPromise = fetchLoad();
+
+  
 
   return (
     <>

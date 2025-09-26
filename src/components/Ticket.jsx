@@ -1,15 +1,25 @@
+import { useState } from "react";
+
 
 
 const Ticket = ({initialData}) => {
+
+  const [count, setCount] = useState(initialData);
+  // console.log(count);
+  
+
   
   return (
+          
+  
+
     <div className="grid col-span-3 md:grid-cols-2 grid-cols-1 gap-4 ">
 
           {
-            initialData.map(data => {
+            count.map(data => {
               // console.log(data);
 
-              return (<div className="shadow-md rounded-md cursor-pointer bg-white p-4">
+              return (<div key={data.id} className="shadow-md rounded-md cursor-pointer bg-white p-4">
 
                 <div>
 
