@@ -51,7 +51,7 @@ const Navber = () => {
             <li className="text-lg "><a>Download</a></li>
             <li className="text-lg "><a>Contact</a></li>
           </ul>
-          <a class="btn text-lg  md:flex font-semibold bg-linear-to-r text-white from-[#6530E4] to-[#9A5DF1]">+ New Ticket</a>
+          <a class="btn text-lg   md:flex font-semibold bg-linear-to-r text-white from-[#6530E4] to-[#9A5DF1]">+ New Ticket</a>
         </div>
 
       </div>

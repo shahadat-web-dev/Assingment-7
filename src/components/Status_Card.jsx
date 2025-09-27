@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { toast } from "react-toastify";
 
 const Status_Card = ({
@@ -10,13 +11,16 @@ const Status_Card = ({
   setInprogress,
 
 }) => {
+  const [isVisible, setIsVisible] = useState(true);
+
   const btnClick = () => {
     toast("✅  Completed");
 
-    // Update resolved list
+  setIsVisible(false);
+    
     setResolved([...resolved, eachTicket]);
 
-    // Update counters
+    
     setResolveCount(resolveCount + 1);
     
 
@@ -28,6 +32,7 @@ const Status_Card = ({
     
     
   };
+  if (!isVisible) return null;
 
   return (
     <div>
