@@ -1,10 +1,13 @@
 import { toast } from "react-toastify";
 
 
-const Ticket_Card = ({ data, ticketSelect, setTicketSelect }) => {
+const Ticket_Card = ({ data,  ticketSelect, setTicketSelect, inProgress, setInprogress }) => {
+  // console.log(data);
+  
   const handleClicked = () => {
-    toast('Card add..')
+    toast('✅  In Progress!')
     setTicketSelect([...ticketSelect, data]);
+    setInprogress(inProgress += 1)
   }
 
   return (

@@ -1,6 +1,11 @@
+import Resolved_Card from "./Resolved_Card";
 
 
-const Resolved_task = () => {
+
+const Resolved_task = ({ resolved }) => {
+  // console.log(resolved);
+
+
   return (
     <div>
       <div className="pt-10">
@@ -8,12 +13,19 @@ const Resolved_task = () => {
         <p className="text-[#627382] pt-4">Select a ticket to add to Task Status</p>
       </div>
 
-      <div className="bg-white p-4 mt-8 shadow-md rounded-sm">
-        <h2 className="text-lg font-medium">Incorrect Billing Address</h2>
-        <div className="flex justify-center pt-4">
-          <button className="bg-[#02A53B] w-full py-2 font-semibold rounded-sm text-white">Complete</button>
-        </div>
-      </div>
+
+      {
+        resolved.map(resolve =>
+          <Resolved_Card resolve={resolve} key={resolve.id}></Resolved_Card>
+
+        )
+      }
+
+      {/* {
+        resolved.map(resolve => console.log(resolve)
+        )
+      } */}
+
     </div>
   );
 };

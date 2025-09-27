@@ -4,7 +4,7 @@ import Task_status from "./Task_status";
 import Resolved_task from "./Resolved_task";
 
 
-const Customer_ticket = ({ fetchPromise,setTicketSelect,ticketSelect }) => {
+const Customer_ticket = ({ fetchPromise, setTicketSelect,ticketSelect ,setResolved, resolved , resolveCount,setResolveCount ,inProgress, setInprogress }) => {
   const initialData = use(fetchPromise);
   // console.log(initialData);
 
@@ -16,14 +16,15 @@ const Customer_ticket = ({ fetchPromise,setTicketSelect,ticketSelect }) => {
 
         {/* Ticket */}
 
-        <Ticket initialData={initialData} ticketSelect={ticketSelect} setTicketSelect={setTicketSelect}></Ticket>
+        <Ticket resolved={resolved} initialData={initialData} ticketSelect={ticketSelect} setTicketSelect={setTicketSelect} inProgress={inProgress} setInprogress={setInprogress}></Ticket>
 
         {/* status */}
         <div className="grid col-span-1">
           <div>
-            <Task_status ticketSelect={ticketSelect} setTicketSelect={setTicketSelect} />
+            <Task_status resolved={resolved} setResolved={setResolved} ticketSelect={ticketSelect} setTicketSelect={setTicketSelect}  resolveCount={resolveCount} setResolveCount={setResolveCount}  inProgress={inProgress} setInprogress={setInprogress}
+             />
 
-            <Resolved_task />
+            <Resolved_task  resolved={resolved}  />
 
           </div>
         </div>

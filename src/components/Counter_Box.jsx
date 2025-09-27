@@ -1,7 +1,8 @@
 
 import bgleft from '../assets/bgleft.png'
 import bgright from '../assets/bgright.png'
-const Counter_Box = ({ticketSelect}) => {
+const Counter_Box = ({  resolveCount , inProgress }) => {
+
 
   return (
 
@@ -15,7 +16,7 @@ const Counter_Box = ({ticketSelect}) => {
             <div className='  flex items-center justify-center flex-col'>
 
               <h1 className='text-[24px]'>In-Progress</h1>
-              <p className='text-[60px] font-bold'>{ticketSelect.length}</p>
+              <p className='text-[60px] font-bold'>{inProgress}</p>
             </div>
 
 
@@ -25,7 +26,7 @@ const Counter_Box = ({ticketSelect}) => {
         {/* Resolved */}
         <div style={{ backgroundImage: `url(${bgright})` }} className={` rounded-xl h-[250px]  flex items-center justify-center bg-cover bg-center text-white flex-col`}>
           <h1 className='text-[24px]'>Resolved</h1>
-          <p className='text-[60px] font-bold'>0</p>
+          <p className='text-[60px] font-bold'>{resolveCount}</p>
         </div>
 
       </div>
